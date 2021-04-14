@@ -1,4 +1,4 @@
-package com.itmuch.usercenter;
+package com.itmuch.contentcenter;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -6,10 +6,10 @@ import tk.mybatis.spring.annotation.MapperScan;
 
 @MapperScan("com.itmuch")
 @SpringBootApplication
-public class UserCenterApplication {
+public class ContentCenterApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(UserCenterApplication.class, args);
+        SpringApplication.run(ContentCenterApplication.class, args);
     }
 
 }

@@ -9,9 +9,9 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.itmuch</groupId>
-    <artifactId>user-center</artifactId>
+    <artifactId>content-center</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>User-Center</name>
+    <name>Content-Center</name>
     <description>Demo project for Spring Boot</description>
     <properties>
         <java.version>1.8</java.version>

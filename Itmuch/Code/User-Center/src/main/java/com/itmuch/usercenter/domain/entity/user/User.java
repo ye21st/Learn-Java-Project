@@ -8,6 +8,7 @@ public class User {
     /**
      * Id
      */
+    @Id
     @GeneratedValue(generator = "JDBC")
     private Integer id;
 
