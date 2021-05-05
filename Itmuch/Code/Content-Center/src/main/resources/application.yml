@@ -1,10 +1,18 @@
 spring:
+  application:
+    name: content-center
   datasource:
     url: jdbc:mysql://rm-wz937i3p0rfl26651yo.mysql.rds.aliyuncs.com:3306/content_center
     hikari:
       username: itmuch
       password: 5dHfoGzlqKmRbInh
       driver-class-name: com.mysql.cj.jdbc.Driver
+
+  cloud:
+    nacos:
+      discovery:
+        server-addr: localhost:8848
+        service: content-center
 
 server:
   port: 8010

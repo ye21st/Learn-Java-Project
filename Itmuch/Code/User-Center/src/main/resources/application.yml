@@ -1,4 +1,6 @@
 spring:
+  application:
+    name: user-center
   datasource:
     url: jdbc:mysql://rm-wz937i3p0rfl26651yo.mysql.rds.aliyuncs.com:3306/user_center
     hikari:
@@ -6,5 +8,18 @@ spring:
       password: 5dHfoGzlqKmRbInh
       driver-class-name: com.mysql.cj.jdbc.Driver
 
+  cloud:
+    nacos:
+      discovery:
+        # 指定 Nacos Server的地址
+        server-addr: localhost:8848
+        service: user-center
+        # 指定命名空间
+#        namespace: 749d8790-c2ee-47d7-9a09-cb7e8d51b70b
+        # 指定集群名称：南京
+#        cluster-name: NJ
 mybatis:
   mapper-locations: classpath:com/itmuch/*.xml
+
+server:
+  port: 8081
