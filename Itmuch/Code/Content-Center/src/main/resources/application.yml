@@ -13,6 +13,19 @@ spring:
       discovery:
         server-addr: localhost:8848
         service: content-center
+#        namespace: 82e2385f-bb78-42a7-8fc2-24f0824732b5
+        cluster-name: BJ
 
 server:
   port: 8010
+
+#user-center:
+#  ribbon:
+#    NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RandomRule
+#ribbon:
+#  eager-load:
+#    enabled: true
+#    clients: user-center
+logging:
+  level:
+    com.itmuch.contentcenter.feignclient.UserCenterFeignClient: debug

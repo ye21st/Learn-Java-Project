@@ -16,10 +16,11 @@ spring:
         service: user-center
         # 指定命名空间
 #        namespace: 749d8790-c2ee-47d7-9a09-cb7e8d51b70b
+#        namespace: 82e2385f-bb78-42a7-8fc2-24f0824732b5
         # 指定集群名称：南京
-#        cluster-name: NJ
+        cluster-name: BJ
 mybatis:
   mapper-locations: classpath:com/itmuch/*.xml
 
 server:
-  port: 8081
+  port: 8080
