@@ -9,7 +9,7 @@ import org.springframework.context.annotation.Bean;
  * @Author ye21st ye21st@gmail.com
  * @Date 2021/5/6 6:05 下午:44
  */
-public class UserCenterFeignConfiguration {
+public class GlobalFeignConfiguration {
 
 	@Bean
 	public Logger.Level level(){
