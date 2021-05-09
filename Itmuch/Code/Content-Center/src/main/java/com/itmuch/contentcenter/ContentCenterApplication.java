@@ -24,6 +24,7 @@ public class ContentCenterApplication {
      */
     @Bean
     @LoadBalanced
+//    @SentinelRestTemplate
     public RestTemplate restTemplate(){
         return new RestTemplate();
     }

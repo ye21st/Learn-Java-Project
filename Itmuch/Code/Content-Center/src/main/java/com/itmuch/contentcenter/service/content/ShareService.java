@@ -5,23 +5,20 @@ import com.itmuch.contentcenter.domain.dto.content.ShareDto;
 import com.itmuch.contentcenter.domain.dto.user.UserDto;
 import com.itmuch.contentcenter.domain.entity.content.Share;
 import com.itmuch.contentcenter.feignclient.UserCenterFeignClient;
-import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import org.springframework.web.client.RestTemplate;
 
 @Slf4j
 @Service
-@RequiredArgsConstructor(onConstructor = @__(@Autowired))
 public class ShareService {
 
-    private final ShareMapper shareMapper;
+    @Autowired
+    private ShareMapper shareMapper;
 
-    private final RestTemplate restTemplate;
-
-    private final UserCenterFeignClient userCenterFeignClient;
+    @Autowired
+    private UserCenterFeignClient userCenterFeignClient;
 
     public ShareDto findById(Integer id){
         // 获取分享详情
